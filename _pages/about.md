@@ -5,9 +5,9 @@ permalink: /
 subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
 profile:
-  align:
-  image: 
-  image_circular: #crops the image to make it circular
+  align: right
+  image: profile_pic1.jpg
+  image_circular: true#crops the image to make it circular
   more_info:
 
 news: # includes a list of news items
