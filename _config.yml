@@ -113,7 +113,7 @@ youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 zotero_username: # your zotero username
 
 contact_note: >
-  The best to reach me via gamil.
+  The best to reach me is via gamil.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -162,19 +162,19 @@ giscus:
   lang: en
 
 # Disqus comments (DEPRECATED)
-disqus_shortname: al-folio # put your disqus shortname
+disqus_shortname: # put your disqus shortname
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # External sources.
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
 external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
-  - name: Google Blog
+  - name: #medium.com
+    rss_url: #https://medium.com/@al-folio/feed
+  - name: #Google Blog
     posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-        published_date: 2024-05-14
+      - url: #https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
+        published_date: #2024-05-14
 
 # -----------------------------------------------------------------------------
 # Newsletter
@@ -313,8 +313,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Adhikari]
+  first_name: [Shishir, R.]
 
   style: apa
   locale: en
