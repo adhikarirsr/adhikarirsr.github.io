@@ -7,7 +7,29 @@ importance: 1
 category: work
 related_publications: #true
 ---
-In the realm of healthcare, tracking and analyzing biomarker trends over time is crucial for both healthcare providers and patients. Today, I'm excited to introduce the Biomarker Analyzer, a sophisticated yet user-friendly Streamlit application that transforms static PDF lab reports into dynamic, visual insights.
+# The Story Behind the Biomarker Analyzer
+
+## A Personal Journey
+
+The catalyst for this project came from a devastating family emergency. My aunt was found unconscious in her bedroom and was rushed to the Tribhuvan University Teaching Hospital (TUTH). She was immediately transferred to ICU:B, where she would spend the next 39 days. She never talked and I only saw her unconcious. I don't even know if she fought for her life. To be honest I don't know if she had her in to fight or she knew that she had to fight and for what. She tragically passed away.
+
+## The Challenge
+
+During those anxiety-filled days in the ICU, our family faced dual challenges: the emotional burden of watching a loved one in critical care and the frustrating struggle to understand her medical condition. While we eventually discovered that her medical records were accessible through merodoctor.com, the data was only available in PDF format—static, difficult to analyze, and challenging to track over time.
+
+This experience illuminated a critical gap in our healthcare system: despite having access to sophisticated medical tests and monitoring, the ability to meaningfully track and understand these results over time remains a significant challenge for both families and healthcare providers.
+
+The experience revealed a clear need for better tools to interpret and analyze medical data. By leveraging the power of Large Language Models (LLMs), I was able to code up a this tool.
+
+## The Solution
+
+The Biomarker Analyzer emerged with a clear mission: to transform the way we visualize the medical data, making it more accessible, understandable, and actionable. This Streamlit application converts static PDF lab reports into dynamic, visual insights, enabling both healthcare providers and families to better track and understand biomarker trends over time.
+
+## Looking Forward
+
+While the current version of the Biomarker Analyzer represents a step forward, I acknowledge that this is just the beginning. There's still much work to be done and numerous possibilities for enhancement. I hope this project can serve as a foundation for others to build upon, potentially creating even more comprehensive solutions for healthcare data interpretation and analysis.
+
+Through this journey, one thing has become clear: there has a lot that has to be done and if we want to have an impact in Nepal, we don't need a quantum leap. 
 
 ## The Challenge
 
@@ -122,10 +144,8 @@ While the current version of the Biomarker Analyzer is already powerful, several
    - Mobile app compatibility
    - Cloud storage support
 
-## Conclusion
-
-The Biomarker Analyzer represents a significant step forward in making medical lab data more accessible and actionable. By automating the extraction and visualization of biomarker data, it enables healthcare providers and patients to focus on what matters most: understanding and acting on health trends.
-
-Whether you're a healthcare provider looking to streamline your workflow or a patient wanting to take control of your health data, the Biomarker Analyzer offers a powerful, user-friendly solution for transforming static lab reports into dynamic, actionable insights.
+## A Call to Action
+If you're a healthcare provider, researcher, or someone who has faced similar challenges in understanding medical data, I invite you to contribute to this project. Whether through feedback, code contributions, or simply sharing your story, every input helps us make this tool more effective for those who need it most.
+Together, we can work towards a future where medical data is not just accessible, but truly meaningful for both healthcare providers and families during their most challenging moments.
 
 The open-source nature of this project means it can continue to evolve and improve with community input, making it an increasingly valuable tool in the healthcare technology ecosystem.
