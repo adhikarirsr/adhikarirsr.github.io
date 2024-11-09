@@ -5,13 +5,16 @@ permalink: /
 subtitle: #<a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
 profile:
-  align: left
-  image: prof_pic.jpg
+  align: #left
+  image: #prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  more_info:       Harvard X DFCI. CWRU
-                Education. Research. Build
+  more_info: 
 
 news: # includes a list of news items
 selected_papers: # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
+<div style="text-align: center;">
+  <h3>Harvard X DFCI. CWRU</h3>
+  <h3>Education. Research. Build</h3>
+</div>
