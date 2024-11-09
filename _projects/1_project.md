@@ -1,7 +1,7 @@
 ---
 layout: page
-title:  Biomarker Analyzer: Transforming Medical Lab Reports into Actionable Insights
-description: #with background image
+title:  Biomarker Analyzer 
+description: Transforming Medical Lab Reports into Actionable Insights
 img: assets/img/12.jpg
 importance: 1
 category: work
