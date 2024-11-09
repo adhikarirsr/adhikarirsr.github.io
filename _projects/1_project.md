@@ -11,15 +11,15 @@ related_publications: #true
 
 ## A Personal Journey
 
-The catalyst for this project came from a devastating family emergency. My aunt was found unconscious in her bedroom and was rushed to the Tribhuvan University Teaching Hospital (TUTH). She was immediately transferred to ICU:B, where she would spend the next 39 days. She never talked and I only saw her unconcious. I don't even know if she fought for her life. To be honest I don't know if she had her in to fight or she knew that she had to fight and for what. She tragically passed away.
+The catalyst for this project arose from a devastating family emergency. My aunt was found unconscious in her bedroom and was rushed to the Tribhuvan University Teaching Hospital (TUTH). She was immediately transferred to the ICU, where she would spend the next 39 days. During that time, I was unable to speak with her, as she remained unconscious. I don’t even know if she fought for her life. To be honest, I’m uncertain whether she had the will to fight or if she understood that she needed to. Tragically, she passed away.
 
 ## The Challenge
 
-During those anxiety-filled days in the ICU, our family faced dual challenges: the emotional burden of watching a loved one in critical care and the frustrating struggle to understand her medical condition. While we eventually discovered that her medical records were accessible through merodoctor.com, the data was only available in PDF format—static, difficult to analyze, and challenging to track over time.
+During the anxiety-filled days in the ICU, our family faced two significant challenges: the emotional burden of watching a loved one in critical care and the frustrating struggle to understand her medical condition. Eventually, we discovered that her medical records could be accessed through [merodoctor.com](https://labreport.merodoctor.com/). However, the data was only available in PDF format—static, difficult to analyze, and challenging to track over time.
 
-This experience illuminated a critical gap in our healthcare system: despite having access to sophisticated medical tests and monitoring, the ability to meaningfully track and understand these results over time remains a significant challenge for both families and healthcare providers.
+This experience highlighted a critical gap in our healthcare system: despite having access to advanced medical tests and monitoring, the ability to meaningfully track and understand these results over time remains a significant challenge for both families and healthcare providers.
 
-The experience revealed a clear need for better tools to interpret and analyze medical data. By leveraging the power of Large Language Models (LLMs), I was able to code up a this tool.
+Our situation underscored the need for better tools to interpret and analyze medical data. By leveraging the power of Large Language Models (LLMs), I was able to develop a tool that aimed to address this issue.
 
 ## The Solution
 
