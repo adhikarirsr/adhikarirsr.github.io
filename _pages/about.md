@@ -8,7 +8,8 @@ profile:
   align: center
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  more_info:
+  more_info: Harvard X DFCI. CWRU
+             Education. Research. Build
 
 news: # includes a list of news items
 selected_papers: # includes a list of papers marked as "selected={true}"
