@@ -1,15 +1,12 @@
 ---
 layout: page
-title: Biomarker Analyzer
+title:  Biomarker Analyzer: Transforming Medical Lab Reports into Actionable Insights
 description: #with background image
 img: assets/img/12.jpg
 importance: 1
 category: work
-related_publications: true
+related_publications: #true
 ---
-
-# Biomarker Analyzer: Transforming Medical Lab Reports into Actionable Insights
-
 In the realm of healthcare, tracking and analyzing biomarker trends over time is crucial for both healthcare providers and patients. Today, I'm excited to introduce the Biomarker Analyzer, a sophisticated yet user-friendly Streamlit application that transforms static PDF lab reports into dynamic, visual insights.
 
 ## The Challenge
