@@ -1,81 +1,134 @@
 ---
 layout: page
-title: project 1
-description: with background image
+title: Biomarker Analyzer
+description: #with background image
 img: assets/img/12.jpg
 importance: 1
 category: work
 related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+# Biomarker Analyzer: Transforming Medical Lab Reports into Actionable Insights
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+In the realm of healthcare, tracking and analyzing biomarker trends over time is crucial for both healthcare providers and patients. Today, I'm excited to introduce the Biomarker Analyzer, a sophisticated yet user-friendly Streamlit application that transforms static PDF lab reports into dynamic, visual insights.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+## The Challenge
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+Healthcare professionals and patients often face several challenges when dealing with medical lab reports:
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+- Multiple PDF reports scattered across different dates
+- Manual data entry for trend analysis
+- Difficulty in visualizing changes over time
+- Handling different date formats (BS/AD)
+- Extracting consistent data from varying report formats
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+The Biomarker Analyzer addresses these challenges by providing an automated solution that makes biomarker analysis accessible and intuitive.
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+## Key Features
 
-{% raw %}
+### 1. Intelligent PDF Processing
+The application leverages `pdfplumber` to extract text from PDF lab reports with remarkable accuracy. It uses sophisticated regular expressions to identify and extract:
+- Patient demographics (name, number, age, and gender)
+- Report dates
+- Biomarker measurements and their units
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
+### 2. Smart Date Handling
+One unique feature is the application's ability to handle both AD (Gregorian) and BS (Bikram Sambat) date formats:
+- Automatically detects BS dates based on year thresholds
+- Converts BS dates to AD format using the `nepali_datetime` library
+- Ensures consistent date formatting across all reports
+
+### 3. Interactive Data Visualization
+The visualization system is built with a focus on clarity and usability:
+- Multiple biomarkers can be plotted on the same graph for comparison
+- Interactive plots with zoom and hover capabilities
+- Clear legends and labels for easy interpretation
+- Grid lines for better readability
+- Customizable plot selections
+
+### 4. User-Friendly Interface
+The Streamlit-based interface offers:
+- Clear instructions for users
+- Multiple file upload capability
+- Organized display of patient information
+- Expandable/collapsible plot sections
+- Interactive biomarker selection
+- Tabular view of extracted data
+
+## Technical Implementation
+
+### Data Extraction
+The core of the application is the `extract_data_from_pdf` function, which:
+1. Extracts text from each page of the PDF
+2. Uses regular expressions to identify key information
+3. Normalizes biomarker names and units
+4. Converts numerical values to appropriate formats
+
+```python
+def extract_data_from_pdf(pdf_file):
+    # Extract text from PDF
+    with pdfplumber.open(pdf_file) as pdf:
+        text = ""
+        for page in pdf.pages:
+            text += page.extract_text() + "\n"
 ```
 
-{% endraw %}
+### Data Processing
+The application processes the extracted data through several steps:
+1. Creation of structured DataFrames
+2. Date normalization and sorting
+3. Numerical value validation
+4. Unit standardization
+
+### Visualization Engine
+The plotting system uses Matplotlib with customized styling:
+- Enhanced readability with the 'ggplot' style
+- Consistent marker and line styles
+- Optimized figure sizes
+- Responsive layout adjustments
+
+## Use Cases
+
+The Biomarker Analyzer is particularly useful for:
+
+1. **Healthcare Providers**
+   - Track patient progress over time
+   - Identify trends and patterns
+   - Generate visual reports for patient consultations
+
+2. **Patients**
+   - Monitor their health markers
+   - Better understand their test results
+   - Keep organized records of their lab reports
+
+3. **Research**
+   - Aggregate and analyze biomarker data
+   - Generate visualizations for studies
+   - Export processed data for further analysis
+
+## Future Enhancements
+
+While the current version of the Biomarker Analyzer is already powerful, several enhancements could make it even more valuable:
+
+1. **Advanced Analytics**
+   - Statistical analysis of trends
+   - Anomaly detection
+   - Reference range visualization
+
+2. **Export Capabilities**
+   - PDF report generation
+   - Data export in various formats
+   - Shareable links for healthcare providers
+
+3. **Integration Features**
+   - Electronic Health Record (EHR) system integration
+   - Mobile app compatibility
+   - Cloud storage support
+
+## Conclusion
+
+The Biomarker Analyzer represents a significant step forward in making medical lab data more accessible and actionable. By automating the extraction and visualization of biomarker data, it enables healthcare providers and patients to focus on what matters most: understanding and acting on health trends.
+
+Whether you're a healthcare provider looking to streamline your workflow or a patient wanting to take control of your health data, the Biomarker Analyzer offers a powerful, user-friendly solution for transforming static lab reports into dynamic, actionable insights.
+
+The open-source nature of this project means it can continue to evolve and improve with community input, making it an increasingly valuable tool in the healthcare technology ecosystem.
