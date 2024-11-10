@@ -2,9 +2,9 @@
 layout: page
 title:  Biomarker Analyzer 
 description: Transforming Medical Lab Reports into Actionable Insights
-img: assets/img/12.jpg
+img: #assets/img/12.jpg
 importance: 1
-category: work
+category: Tech
 related_publications: #true
 ---
 ## The Story Behind the Biomarker Analyzer
