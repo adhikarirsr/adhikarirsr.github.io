@@ -8,7 +8,7 @@ profile:
   align: #centre
   image: #prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  more_info: Educate • Research • Build
+  more_info: #Educate • Research • Build
 
 news: # includes a list of news items
 selected_papers: # includes a list of papers marked as "selected={true}"
