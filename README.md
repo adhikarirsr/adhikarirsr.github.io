@@ -23,6 +23,7 @@
 </div>
 
 ## User community
+THIS IS A TEST. HELLO WORLD!!!!
 
 The vibrant community of **al-folio** users is growing!
 Academics around the world use this theme for their homepages, blogs, lab pages, as well as webpages for courses, workshops, conferences, meetups, and more.

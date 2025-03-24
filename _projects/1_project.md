@@ -2,7 +2,7 @@
 layout: page
 title:  Biomarker Analyzer 
 description: Transforming Medical Lab Reports into Actionable Insights
-img: #assets/img/12.jpg
+img: assets/img/biomarker.png
 importance: 1
 category: work
 related_publications: #true
